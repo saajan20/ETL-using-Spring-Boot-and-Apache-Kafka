@@ -78,7 +78,7 @@ bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-f
 We test the project by testing the Streaming Application that is the TransformingData Application. For testing a streaming application we don't need the kafka server running. For this we need kafka-streams-test-utils maven dependency.
 
 
-####Conclusion
+#### Conclusion
 
 The Loading part to the database can be done directly using the kafka connect sink api. Developers can use required database connectors from any source (confluent,debezium etc) and use it in their project. This will enable them to load the data directly from target_topic.
 
