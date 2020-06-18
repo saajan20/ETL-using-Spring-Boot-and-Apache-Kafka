@@ -48,19 +48,19 @@ as visible in the diagram. Let's look at the steps involved.
     
 #### Running the Project
 
-**Step 1: ** Starting the Zookeeper server
+**Step 1:** Starting the Zookeeper server
 
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
-**Step 2: ** Starting the Kafka server
+**Step 2:** Starting the Kafka server
 
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
-**Step 3: ** Creation of required Kafka Topics.
+**Step 3:** Creation of required Kafka Topics.
 
 bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 2 --topic target_topic.
 
-**Step 4: ** Providing input file at defined location which is(C:\\Kafka_Files\\filename). You can change the location in application.properties file.
+**Step 4:** Providing input file at defined location which is(C:\\Kafka_Files\\filename). You can change the location in application.properties file.
 
 ![](img/input.png)
 
